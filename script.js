@@ -48,3 +48,37 @@ let num = Math.random() * 4;
 if (num % 2 === 0) {
 	console.log("even");
 }
+
+// const password = prompt("enter your password:");
+
+// if (password >= 6 && password.indexOf(" ") === -1) {
+// 	console.log("valid password");
+// } else {
+// 	console.log("incorect format");
+// }
+
+// const mystery = "Passwor7"; //CHANGE THIS VALUE TO MAKE THE CONDITIONAL BELOW TRUE
+
+// // LEAVE THIS CODE ALONE! (pretty please)
+// if (mystery[0] === "P" && mystery.length > 5 && mystery.indexOf("7") !== -1) {
+// 	console.log("YOU GOT IT!!!");
+// }
+// console.log(mystery[0]);
+// console.log(mystery.length);
+// console.log(mystery.indexOf("7"));
+
+const day = 3;
+switch (day) {
+	case 1:
+		console.log("monday");
+		break;
+	case 2:
+		console.log("tuesday");
+		break;
+	case 3:
+		console.log("wednesday");
+		break;
+	default:
+		console.log("pick a number from 1-3");
+		break;
+}
