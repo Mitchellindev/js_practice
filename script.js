@@ -136,4 +136,65 @@ const tiktac = [
 	[null, "X", "O"],
 	["X", "O", "X"],
 ];
+
 console.log(tiktac[0][1]);
+
+//objects
+const person = {
+	name: "Jane",
+	age: 22,
+	like: "chicken",
+	colors: ["red", "yellow"],
+};
+
+console.log(person.age);
+
+const restaurant = {
+	name: "Ichiran Ramen",
+	address: `${Math.floor(Math.random() * 100) + 1} Johnson Ave`,
+	city: "Brooklyn",
+	state: "NY",
+	zipcode: "11206",
+};
+
+//YOUR CODE GOES DOWN HERE:
+let fullAddress =
+	restaurant.address +
+	", " +
+	restaurant.city +
+	", " +
+	restaurant.state +
+	" " +
+	restaurant.zipcode;
+console.log(fullAddress);
+
+const midTerms = { jane: 98, john: 84 };
+midTerms.john = 99;
+midTerms.jack = 55;
+console.log(midTerms);
+
+const shoppingCart = [
+	{
+		products: "shoe",
+		price: "$2.99",
+		qty: 2,
+	},
+	{
+		products: "shoe",
+		price: "$2.99",
+		qty: 2,
+	},
+	{
+		products: "crop top",
+		price: "$1.99",
+		qty: 1,
+	},
+	{
+		products: "dress",
+		price: "$11.99",
+		qty: 2,
+	},
+];
+
+console.log(shoppingCart);
+console.log(shoppingCart[2].products);
