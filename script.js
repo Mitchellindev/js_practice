@@ -82,3 +82,58 @@ switch (day) {
 		console.log("pick a number from 1-3");
 		break;
 }
+
+//arrays
+let mixedArr = ["red", "yellow", 1, 3];
+
+//modifying arrays
+mixedArr[1] = "purple";
+
+console.log(mixedArr);
+//array methods
+let movieLine = ["joy", "gift"];
+
+movieLine.push("sarah", "jane"); // adds to the end of an array
+movieLine.pop(); // removes from the end of an array
+movieLine.shift(); // removes from the begining of an array
+movieLine.unshift("colt", "jerry"); //adds to the beginning of an array
+console.log(movieLine);
+
+const planets = ["The Moon", "Venus", "Earth", "Mars", "Jupiter"];
+
+// YOUR CODE GOES BELOW THIS LINE:
+planets.shift();
+planets.push("Saturn");
+planets.unshift("Mercury");
+console.log(planets);
+
+let num1 = [1, 2, 3];
+let num2 = [4, 5, 6];
+
+let num1_num2 = num1.concat(num2); //combines two arrays
+
+console.log(num1_num2);
+console.log(num1_num2.includes(3)); // checks if the arg is included in the array
+console.log(num1_num2.reverse()); //reverses an array
+
+let color = ["red", "orange", "yellow", "green", "blue", "pink"];
+console.log(color);
+console.log(color.slice(2, 6)); //take two arguement start and end
+
+let months = ["jan", "feb", "apr", "may"];
+//splice syntax: splice(start, how many things to delete , what to insert)
+console.log(months);
+months.splice(2, 0, "mar");
+console.log(months);
+months.splice(5, 0, "jun");
+console.log(months);
+months.sort(); // arranges an array in alphabetical manner
+console.log(months);
+
+//nested array
+const tiktac = [
+	["O", null, "X"],
+	[null, "X", "O"],
+	["X", "O", "X"],
+];
+console.log(tiktac[0][1]);
